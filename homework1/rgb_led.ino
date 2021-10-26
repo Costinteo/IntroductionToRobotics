@@ -22,25 +22,13 @@ struct Colour {
 
 /* global variables */
 Colour ledColourIntensity;
+float intensityMultiplier = 0.1;    /* LED INTENSITY MULTIPLIER, USE TO LOWER INTENSITY FURTHER */
+uint16_t redPotInput;
+uint16_t greenPotInput;
+uint16_t bluePotInput;
 
-uint8_t currentIntensityPercent = 10;
-
-/*
- * function that takes as param an input from a potentiometer in range [0,1024)
- * and returns it normalized to the range [0,256)
- * before returning, it also multiplies with intensityPercent, so you can restrict the range further
- * by default, intensityPercent is 100%
- * 
- */
-uint8_t normalizeInputFromPot(uint16_t potInput, uint8_t intensityPercent = 100) {
-  return potInput / (POT_PIN_INPUT_MAX / LED_INTENSITY_MAX) * (intensityPercent % 100 / 100.0);
-}
-
-#include "test.h"
 /* setup function */
 void setup() {
-  Serial.begin(9600);
-  Serial.println(func());
   /* input pins */
   pinMode(POT_PIN_1, INPUT);
   pinMode(POT_PIN_2, INPUT);
@@ -58,9 +46,16 @@ void setup() {
 void loop() {
 
   /* input from potentiometers */
-  ledColourIntensity.red = normalizeInputFromPot(analogRead(POT_PIN_1), currentIntensityPercent);
-  ledColourIntensity.green = normalizeInputFromPot(analogRead(POT_PIN_2), currentIntensityPercent);
-  ledColourIntensity.blue = normalizeInputFromPot(analogRead(POT_PIN_3), currentIntensityPercent);
+  redPotInput = analogRead(POT_PIN_1);
+  greenPotInput = analogRead(POT_PIN_2);
+  bluePotInput = analogRead(POT_PIN_3);
+  
+  /* we normalize the input value using the map() function */
+  /* we also multiply it by intensityMultiplier (which is a float value between 0 and 1) */
+  /* this is done so the LED doesn't burn my eyes all the time */
+  ledColourIntensity.red = intensityMultiplier * map(redPotInput, 0, POT_PIN_INPUT_MAX, 0, LED_INTENSITY_MAX);
+  ledColourIntensity.green = intensityMultiplier * map(greenPotInput, 0, POT_PIN_INPUT_MAX, 0, LED_INTENSITY_MAX);
+  ledColourIntensity.blue = intensityMultiplier * map(bluePotInput, 0, POT_PIN_INPUT_MAX, 0, LED_INTENSITY_MAX);
 
   /* output to RGB led */
   analogWrite(RED_PIN, ledColourIntensity.red);
