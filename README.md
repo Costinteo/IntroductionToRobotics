@@ -4,11 +4,13 @@ Hi! This is the repo where I'll post my homeworks for the Introduction to Roboti
 Also you're free to distribute or use this code however you like, as long as you keep it free (free as in freedom) and open source (see attached GNU GPL License v3.0 for more details).
   
 Index:
-* [Homework 1 - RGB LED controlled by 3 potentiometers](#homework_1)
+* [Homework 1 - RGB LED controlled by 3 potentiometers](#rgb_led)
+* [Homework 2 - Traffic Lights simulation in 4 stages, triggered by button](#traffic_lights)
 
 ...
   
-## Homework_1
+## RGB_LED
+### Homework 1
 Our first homework consisted of making use of 3 potentiometers to control each colour of an RGB LED. I read the values of the potentiometers and digitally map them to current intensity values to output to each LED colour. Pretty simple really. Here's some pictures:
 
 <img src="https://raw.githubusercontent.com/Costinteo/IntroductionToRobotics/main/homework1/side_view_1.jpg" width="400" />  <img src="https://raw.githubusercontent.com/Costinteo/IntroductionToRobotics/main/homework1/side_view_2.jpg" width="400" /><img src="https://github.com/Costinteo/IntroductionToRobotics/blob/main/homework1/top_down.jpg?raw=true" width="400" />
@@ -17,3 +19,12 @@ And here's the video:
 
 https://www.youtube.com/watch?v=pI68Qa9GIf4E
 
+## TRAFFIC_LIGHTS
+### Homework 2
+Second assignment was to simulate some traffic lights. Basically, we have a pair of lights for pedestrians that presumably want to cross the street (green and red) and 3 lights for the cars (green, yellow and red). The simulation starts when the button is pressed. So after counting down 10 seconds, the simulation proceeds to stage 2 (yellow for cars). Then, for stage 3, we have red for cars and green for pedestrians and the buzzer starts buzzing. Final stage is green flashing for pedestrians and buzzer syncing with the flashes. And finally, the stages loop back to beginning. Here's some pictures:
+
+<img src="https://raw.githubusercontent.com/Costinteo/IntroductionToRobotics/main/homework2/front_view_1.jpg" width="400" />  <img src="https://raw.githubusercontent.com/Costinteo/IntroductionToRobotics/main/homework2/front_view_2.jpg" width="400" /><img src="https://raw.githubusercontent.com/Costinteo/IntroductionToRobotics/main/homework2/side_view.jpg" width="400" /> <img src="https://raw.githubusercontent.com/Costinteo/IntroductionToRobotics/main/homework2/top_view.jpg" width="400" />
+
+And here's the video:
+
+https://www.youtube.com/watch?v=18-YGTBy0yA
