@@ -32,8 +32,9 @@ https://www.youtube.com/watch?v=18-YGTBy0yA
 
 ## EMF_DETECTOR
 ### Homework 3
-(DISCLAIMER) I really took the time off for this homework, nothing too creative here, folks :(
-Third assignment was to make a simple EMF detector. Gotta fight the undead somehow. Best practice is detection and prevention first. So I made a really simple EMF detector. Here's some pictures:
+[DISCLAIMER] I really took the time off for this homework, nothing too creative here, folks :(
+
+Third assignment was to make a simple EMF detector. Gotta fight the undead somehow. Best practice is detection and prevention first. So I made a really simple EMF detector. It detects EMF through a paperclip antenna and sends it to the Arduino. The code then decides how many leds to light up and how fast the buzzer buzzes. Here's some pictures:
 
 <img src="https://github.com/Costinteo/IntroductionToRobotics/blob/main/homework3/front_view.jpg?raw=true" width="400" />  <img src="https://github.com/Costinteo/IntroductionToRobotics/blob/main/homework3/top_view.jpg?raw=true" width="400" /><img src="https://github.com/Costinteo/IntroductionToRobotics/blob/main/homework3/side_view_1.jpg?raw=true" width="400" /> <img src="https://github.com/Costinteo/IntroductionToRobotics/blob/main/homework3/side_view_2.jpg?raw=true" width="400" />
 
