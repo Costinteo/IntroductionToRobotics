@@ -7,6 +7,7 @@ Index:
 * [Homework 1 - RGB LED controlled by 3 potentiometers](#rgb_led)
 * [Homework 2 - Traffic Lights simulation in 4 stages, triggered by button](#traffic_lights)
 * [Homework 3 - EMF Detector, catches all kinds of ghosts and demons ](#emf_detector)
+* [Homework 4 - 4 digit 7 segment display, fully controllable](#4_digit_7_segment)
 
 ...
   
@@ -42,4 +43,14 @@ And here's the video:
 
 https://www.youtube.com/watch?v=zecxh1xtOQE
 
+
+## 4_DIGIT_7_SEGMENT
+### Homework 4
+Fourth assignment was probably the one that took the most. This time, some pretty difficult-to-get-nicely logic had to be implemented. The task was to make a fully controllable 4 digit 7 segment display, in which you could select a digit and change its value. For bonus points (included in my code), we also had to save the last state and load it up whenever Arduino booted (using EEPROM). Piece of cake. Except it wasn't really. I wish I could have done more creative stuff with it, but it took a lot of mental power to imagine some bitwise operations. So I'm happy just with writing out "LEET" to it.
+
+<img src="https://github.com/Costinteo/IntroductionToRobotics/blob/main/homework4/top_view_1.jpg?raw=true" width="400" />  <img src="https://github.com/Costinteo/IntroductionToRobotics/blob/main/homework4/top_view_2.jpg?raw=true" width="400" /><img src="https://github.com/Costinteo/IntroductionToRobotics/blob/main/homework4/side_view_1.jpg?raw=true" width="400" /> <img src="https://github.com/Costinteo/IntroductionToRobotics/blob/main/homework4/side_view_2.jpg?raw=true" width="400" />
+
+And here's the video:
+
+https://www.youtube.com/watch?v=5FkiqM38ros
 
