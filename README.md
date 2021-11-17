@@ -6,6 +6,7 @@ Also you're free to distribute or use this code however you like, as long as you
 Index:
 * [Homework 1 - RGB LED controlled by 3 potentiometers](#rgb_led)
 * [Homework 2 - Traffic Lights simulation in 4 stages, triggered by button](#traffic_lights)
+* [Homework 3 - EMF Detector, catches all kinds of ghosts and demons ](#emf_detector)
 
 ...
   
@@ -28,3 +29,17 @@ Second assignment was to simulate some traffic lights. Basically, we have a pair
 And here's the video:
 
 https://www.youtube.com/watch?v=18-YGTBy0yA
+
+## EMF_DETECTOR
+### Homework 3
+[DISCLAIMER] I really took the time off for this homework, nothing too creative here, folks :(
+
+Third assignment was to make a simple EMF detector. Gotta fight the undead somehow. Best practice is detection and prevention first. So I made a really simple EMF detector. It detects EMF through a paperclip antenna and sends it to the Arduino. The code then decides how many leds to light up and how fast the buzzer buzzes. Here's some pictures:
+
+<img src="https://github.com/Costinteo/IntroductionToRobotics/blob/main/homework3/front_view.jpg?raw=true" width="400" />  <img src="https://github.com/Costinteo/IntroductionToRobotics/blob/main/homework3/top_view.jpg?raw=true" width="400" /><img src="https://github.com/Costinteo/IntroductionToRobotics/blob/main/homework3/side_view_1.jpg?raw=true" width="400" /> <img src="https://github.com/Costinteo/IntroductionToRobotics/blob/main/homework3/side_view_2.jpg?raw=true" width="400" />
+
+And here's the video:
+
+https://www.youtube.com/watch?v=zecxh1xtOQE
+
+
