@@ -189,6 +189,7 @@ namespace Display {
   void saveDisplayState() {
 
     if (millis() - lastSaved < SAVE_INTERVAL) return;
+    lastSaved = millis();
     
     /* we're gonna use addr to iterate through display indices and also write to on arduino */
     /* a bit confusing, honestly, but it works. I'm not gonna double variable this loop just for this */
